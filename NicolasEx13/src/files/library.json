@@ -1,0 +1,31 @@
+{
+	"library": [
+		{
+			"book": {
+				"@id": "2003-Blanken",
+				"title": "Intelligent XML Search",
+				"editor": "Henk A. Blanken et al.",
+				"publisher": "Springer Verlag"
+			},
+			"journal": {
+				"@id": "TODS_1_2003",
+				"@publ_year": "2003",
+				"title": "ACM Transactions on Databases",
+				"volume": {
+					"#text": 24,
+					"number": 1
+				},
+				"misc": {
+					"@diploma_id": "Dipl2002-12",
+					"@thesis_id": "TR2002-01-04",
+					"author": [
+						"U. Known"
+					],
+					"title": "The Diploma Thesis that didn't appear",
+					"year": 2002,
+					"pages": 0
+				}
+			}
+		}
+	]
+}
