@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="LoggerAppConfig">
+	<Appenders>
+		<File name="FILE" fileName="src/main/resources/logs/simple_app.log">
+			<PatternLayout pattern="%level - %d{yyyy-MM-dd HH:mm:ss,SSS} - %C{1}.java - %msg%n"/>
+		</File>
+	</Appenders>
+	<Loggers>
+		<Logger name="LOGGER1" additivity="false" level="INFO">
+			<AppenderRef ref="FILE"/>
+		</Logger>
+		<Root level="INFO" additivity="false">
+			<AppenderRef ref="FILE"/>
+		</Root>
+	</Loggers>
+</Configuration>
