@@ -63,10 +63,10 @@ values(1, 800, 1300),
 --from employees
 --where job_name = 'MANAGER' and salary between 1500.00 and 2500.00;
 
--- ITEM #3 (not ok)
---select emp_name, (salary + commission) as income
+-- ITEM #3
+--select emp_name
 --from employees
---where income > 2000.00;
+--where (salary + commission) > 2000.00;
 
 -- ITEM 4
 --select emp_name, dep_name
@@ -74,5 +74,17 @@ values(1, 800, 1300),
 --on emp.dep_id = dept.dep_id
 --where emp.dep_id = 1001;
 
--- ITEM 5
+-- ITEM 5 
+--employees that earn more than their manager
+--select emp.emp_name
+--from employees emp inner join employees mgr 
+--on emp.manager_id = mgr.emp_id
+--where emp.salary > mgr.salary
+
+-- ITEM 6
+
+
+
+
+
 
