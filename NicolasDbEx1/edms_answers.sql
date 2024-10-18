@@ -58,7 +58,21 @@ values(1, 800, 1300),
 		(5, 3101, 9999);		
 */
 
--- ITEM #2 hehe
+-- ITEM #2
+--select emp_name
+--from employees
+--where job_name = 'MANAGER' and salary between 1500.00 and 2500.00;
 
+-- ITEM #3 (not ok)
+--select emp_name, (salary + commission) as income
+--from employees
+--where income > 2000.00;
 
+-- ITEM 4
+--select emp_name, dep_name
+--from employees emp inner join department dept
+--on emp.dep_id = dept.dep_id
+--where emp.dep_id = 1001;
+
+-- ITEM 5
 
