@@ -147,7 +147,7 @@ from employees
 where hire_date < now() - interval '10 years';
 
 -- ITEM 17
-select emp_name as "Employee Names with 'AR'"
+select emp_name as "Employee Names containing 'AR'"
 from employees
 where emp_name like '%AR%';
 
