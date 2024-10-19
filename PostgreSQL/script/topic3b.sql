@@ -29,7 +29,7 @@ where amount <= commission + 1000.00;
 
 --M% starts with M; 
 --M____ any word that starts with M and has 4 whitespace/special char/alphabet
---%h% any word that contains s in it
+--%h% any word that contains h in it
 -- ~* not case sensitive
 -- ~ similar to like
 -- ^S starts with letter S; 
