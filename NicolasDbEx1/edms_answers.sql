@@ -81,7 +81,7 @@ where emp.dep_id = 1001;
 select emp.emp_name as "Employees that earn more than their manager"
 from employees emp inner join employees mgr 
 on emp.manager_id = mgr.emp_id
-where emp.salary > mgr.salary
+where emp.salary > mgr.salary;
 
 -- ITEM 6
 select emp.emp_name as "Salesmen earning a salary grade of 2"
@@ -99,12 +99,12 @@ order by sal.grade;
 select distinct mgr.emp_name as "Employees who are managers of at least one salesman"
 from employees mgr join employees subordinates
 on  mgr.emp_id = subordinates.manager_id
-where subordinates.job_name = 'SALESMAN'
+where subordinates.job_name = 'SALESMAN';
 
 -- ITEM 9
 select dep_name as "Departments located in Melbourne"
 from department
-where dep_location = 'MELBOURNE'
+where dep_location = 'MELBOURNE';
 
 -- ITEM 10
 
