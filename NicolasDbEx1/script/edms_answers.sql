@@ -1,5 +1,5 @@
 -- ITEM 1
-/*
+
 create database edms;
 \c edms;
 
@@ -54,8 +54,7 @@ values(68319, 'KAYLING', 'PRESIDENT', NULL, '1991-11-18', 6000.00, NULL, 1001),
 	(68454, 'TUCKER', 'SALESMAN', 66928, '1991-09-08', 1600.00, 0.00, 3001),
 	(68736, 'ADNRES', 'CLERK', 67858, '1997-05-23', 1200.00, NULL, 2001),
 	(69000, 'JULIUS', 'CLERK', 66928, '1991-12-03', 1050.00, NULL, 3001),
-	(69324, 'MARKER', 'CLERK', 67832, '1992-01-23', 1400.00, NULL, 1001);		
-*/
+	(69324, 'MARKER', 'CLERK', 67832, '1992-01-23', 1400.00, NULL, 1001);
 
 -- ITEM 2
 select emp_name as "Managers wih salary between 1500-2500"
@@ -126,8 +125,6 @@ select emp_name || ' & ' || job_name as "Employee & Job"
 from employees;
 
 -- ITEM 13
---select emp_name as "Name", trim(to_char(hire_date, 'Month DD, YYYY')) as "Hired Date"
---select emp_name || ': ' || to_char(hire_date, 'FMMonth DD, YYYY') as "Employees' Hired Date"
 select emp_name || ': ' || trim(to_char(hire_date, 'Month DD, YYYY')) as "Employees' Hired Date"
 from employees;
 
@@ -169,4 +166,4 @@ from employees;
 -- ITEM 20
 select *
 from employees
-where commission <> 0.00;
+where commission is not null;
